@@ -97,7 +97,7 @@ section {
 }
 
 .side-menu .side-menu-list .side-menu-item {
-  padding: 1rem 2.5rem;
+  padding: 1rem 0 1rem 2.5rem;
   transition: all 0.2s ease-in;
   cursor: pointer;
 }
@@ -109,6 +109,23 @@ section {
 
 .side-menu .side-menu-list .side-menu-item i {
   margin-right: 1rem;
+}
+
+.side-menu .side-menu-list .side-menu-item .tag {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-left: 1rem;
+  color: var(--primary-accent);
+  animation: blink 1s linear infinite alternate;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Login */
